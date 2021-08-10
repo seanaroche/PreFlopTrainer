@@ -19,6 +19,8 @@ The tight game creates a hashmap of hands and their correct action based off of 
 
 ![image](https://user-images.githubusercontent.com/60154921/128922040-4a665e21-7314-4d52-99c3-83e4ec5fda60.png)
 
+The 'o' and 's' designations in the charts and the hashmaps designate if the two cards in the hand are of the same suit or not. 
+
 The hashmaps do not include hands where the user should fold: When searching for the user's hand in the hashmap, if it returns null then the correct action is fold.
 
 The user is then given a two card hand and asked whether or not they would like to fold, call, or raise. The program then checks the user's action with the correct action assigned to that hand based on the charts.java file. The program will inform the user if they are correct or incorrect, then shuffle the deck and give the user another hand, repeating the process. 
