@@ -1,18 +1,24 @@
-## Getting Started
+# PreFlopTrainer
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+https://user-images.githubusercontent.com/60154921/128921519-8fc972ce-18c8-41a9-9544-9158370e4efc.mov
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+## Description
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+This java application is designed to train the user on what Preflop action to take depending on their starting hand in Texas Hold'em poker. 
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Usage 
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+The user is able to choose whether or not the game being simulated is generally tight or loose - tight meaning opposing players are generally only playing great starting hands, and loose meaning opposing players are playing with a wider range of hands than normal. 
 
-## Dependency Management
+The loose game creates a hashmap of hands and their correct action based off this chart: 
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+![image](https://user-images.githubusercontent.com/60154921/128922142-4708e0cf-d694-48e9-8daf-f4c8e9147df5.png)
+
+The tight game creates a hashmap of hands and their correct action based off of this chart: 
+
+![image](https://user-images.githubusercontent.com/60154921/128922040-4a665e21-7314-4d52-99c3-83e4ec5fda60.png)
+
+The user is then given a two card hand and asked whether or not they would like to fold, call, or raise. The program then checks the user's action with the correct action assigned to that hand based on the charts.java file. The program will inform the user if they are correct or incorrect, then shuffle the deck and give the user another hand, repeating the process. 
+
+The program will give the user their successful attempts/total attempts as their score at the conclusion of the program.
